@@ -5,4 +5,4 @@
 (define i 5)
 (define str-length (string-length str))
 
-(string-append (substring str 0 i) (substring str (+ i 1) str-length))
+(string-append (substring str 0 i) "_" (substring str i str-length))
