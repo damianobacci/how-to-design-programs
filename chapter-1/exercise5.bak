@@ -6,10 +6,8 @@
 (define UNIT 10)
 (define HEIGHT (* UNIT 10))
 (define WIDTH (* UNIT 10))
-(define EMPTY  (empty-scene WIDTH HEIGHT))
 
-(overlay/xy (circle (* 0.3 UNIT) "solid" "white") (* UNIT -3.5) (* UNIT -7.5) (add-line (place-image (rotate -90 (triangle (* 3.3 UNIT) "solid" "red"))
-   (* 6.4 UNIT) (* 2.4 UNIT) (add-solid-curve EMPTY
+(add-solid-curve (rectangle WIDTH HEIGHT "solid" "white")
                    (* 1 UNIT) (* 7 UNIT) -60 0.5
                    (* 9 UNIT) (* 7 UNIT) 60 0.5
-                   "black")) (* 5 UNIT) UNIT (* 5 UNIT) (* 7 UNIT) (pen "black" (/ UNIT 2) "solid" "round" "round")))
+                   "black")
